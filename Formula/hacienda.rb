@@ -5,7 +5,7 @@
 class Hacienda < Formula
   desc "🇨🇷 Hacienda es una aplicación que se conecta al API del Ministerio de Hacienda de Costa Rica."
   homepage "https://kevinah95.github.io/hacienda"
-  version "0.10.1"
+  version "1.0.0"
   license "Apache-2.0"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Hacienda < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kevinah95/hacienda/releases/download/v0.10.1/hacienda_Darwin_arm64.tar.gz"
-      sha256 "439d6e6ca9b2db5cd6522f21c6acc13fb64b955502f2b70ed27404520e827002"
+      url "https://github.com/kevinah95/hacienda/releases/download/v1.0.0/hacienda_Darwin_arm64.tar.gz"
+      sha256 "260e228a2e79db07a582b83d1faebd24bbf3bf3536bb4a23dddf05aa086ab073"
 
       def install
         bin.install "hacienda"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kevinah95/hacienda/releases/download/v0.10.1/hacienda_Darwin_x86_64.tar.gz"
-      sha256 "59ac97c1367b4dba295aa072ab787dd27effabbbe31c231ae06c72994c12fdb2"
+      url "https://github.com/kevinah95/hacienda/releases/download/v1.0.0/hacienda_Darwin_x86_64.tar.gz"
+      sha256 "21cf9e6b962d6276b712d0d562fe7abe8d5c4ab2960ca54abe289eb255fb7d1e"
 
       def install
         bin.install "hacienda"
@@ -32,16 +32,16 @@ class Hacienda < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kevinah95/hacienda/releases/download/v0.10.1/hacienda_Linux_arm64.tar.gz"
-      sha256 "9a42dc0636bb41c7469f8f802b86a45c90dbeb774cce9269c16f8a5346d560cf"
+      url "https://github.com/kevinah95/hacienda/releases/download/v1.0.0/hacienda_Linux_arm64.tar.gz"
+      sha256 "e9bda48ec9ceeb722efc8934ab65d84348ef3dd1e332445d9d0e33020033f8d5"
 
       def install
         bin.install "hacienda"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kevinah95/hacienda/releases/download/v0.10.1/hacienda_Linux_x86_64.tar.gz"
-      sha256 "0f185b07c95417584d9986f27c07e6cd628f483de3250b4fff3f0fd73c1ed78f"
+      url "https://github.com/kevinah95/hacienda/releases/download/v1.0.0/hacienda_Linux_x86_64.tar.gz"
+      sha256 "8c58eb6edf0336fad2a874ffddb09c7f2c9f5b5cea83922e68e84165bfc22c2a"
 
       def install
         bin.install "hacienda"
